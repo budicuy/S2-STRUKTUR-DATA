@@ -2,6 +2,9 @@
 #include <conio.h>
 using namespace std;
 
+void dMenu();
+void dPertama();
+
 int main()
 {
 
@@ -25,7 +28,7 @@ int main()
     case '1':
         dPertama();
         break;
-        }
+    }
 }
 
 void dMenu()
@@ -38,11 +41,4 @@ void dMenu()
     cout << "4. Menu Keempat" << endl;
     cout << "5. Exit" << endl;
     cout << "Masukan Angka : ";
-}
-
-void dPertama()
-{
-    system("cls");
-    cout << "Hallo Saya Menu Pertama" << endl;
-    getch();
 }
