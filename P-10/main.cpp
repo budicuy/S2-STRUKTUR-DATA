@@ -1,10 +1,16 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 int main()
 {
 
-    cout << "Halo Dunia" << fendl;
+    char pl;
+    do
+    {
+        dMenu();
+        pl = getch();
+    } while (pl != '5');
 }
 
 void dMenu()
