@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+
 using namespace std;
 
 void dMenu();
@@ -13,22 +14,37 @@ int main()
     {
         dMenu();
         pl = getch();
+        switch (pl)
+        {
+        case '1':
+            dPertama();
+            break;
+        case '2':
+            system("cls");
+            cout << "Hallo Saya Menu Kedua" << endl;
+            getch();
+            break;
+        case '3':
+            system("cls");
+            cout << "Hallo Saya Menu Ketiga" << endl;
+            getch();
+            break;
+        case '4':
+            system("cls");
+            cout << "Hallo Saya Menu Keempat" << endl;
+            getch();
+            break;
+        case '5':
+            system("cls");
+            cout << "Terima Kasih" << endl;
+            break;
+        default:
+            system("cls");
+            cout << "Pilihan tidak ada" << endl;
+            getch();
+            break;
+        }
     } while (pl != '5');
-
-    switch (pl)
-    {
-    case '5':
-        break;
-
-    default:
-        system("cls");
-        cout << "Pilihan tidak tersedia" << endl;
-        getch();
-        break;
-    case '1':
-        dPertama();
-        break;
-    }
 }
 
 void dMenu()
