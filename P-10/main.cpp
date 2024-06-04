@@ -42,3 +42,10 @@ void dMenu()
     cout << "5. Exit" << endl;
     cout << "Masukan Angka : ";
 }
+
+void dPertama()
+{
+    system("cls");
+    cout << "Hallo Saya Menu Pertama" << endl;
+    getch();
+}
